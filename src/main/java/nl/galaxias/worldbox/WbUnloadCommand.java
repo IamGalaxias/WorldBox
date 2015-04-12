@@ -21,8 +21,6 @@ public class WbUnloadCommand implements CommandExecutor {
                 }
                 else if (!(sender.hasPermission("worldbox.unload"))) {
                     sender.sendMessage(WorldBox.getNoPermission());
-
-                    return false;
                 }
             }
             else {

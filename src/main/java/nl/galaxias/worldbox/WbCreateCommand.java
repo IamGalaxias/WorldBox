@@ -21,8 +21,6 @@ public class WbCreateCommand implements CommandExecutor {
                 }
                 else if (!(sender.hasPermission("worldbox.create"))) {
                     sender.sendMessage(WorldBox.getNoPermission());
-
-                    return false;
                 }
             }
             else {

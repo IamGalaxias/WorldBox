@@ -24,8 +24,6 @@ public class GotoCommand implements CommandExecutor {
                 }
                 else if (!(sender.hasPermission("worldbox.goto"))) {
                     sender.sendMessage(WorldBox.getNoPermission());
-
-                    return false;
                 }
             }
             else {
