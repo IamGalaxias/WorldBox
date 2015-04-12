@@ -13,7 +13,7 @@ import org.bukkit.command.CommandSender;
 public class WbCreateCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("wbcreate")) {
-            if (args.length == 0) {
+            if (args.length == 1) {
                 if (sender.hasPermission("worldbox.create")) {
                     String worldname = args[0];
 

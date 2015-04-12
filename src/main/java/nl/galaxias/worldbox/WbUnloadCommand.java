@@ -13,7 +13,7 @@ import org.bukkit.command.CommandSender;
 public class WbUnloadCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("wbunload")) {
-            if (args.length == 0) {
+            if (args.length == 1) {
                 if (sender.hasPermission("worldbox.unload")) {
                     String worldname = args[0];
 

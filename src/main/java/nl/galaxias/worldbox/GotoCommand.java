@@ -16,7 +16,7 @@ public class GotoCommand implements CommandExecutor {
         Player player = (Player) sender;
 
         if (cmd.getName().equalsIgnoreCase("goto")) {
-            if (args.length == 0) {
+            if (args.length == 1) {
                 if (sender.hasPermission("worldbox.goto")) {
                     String worldname = args[0];
 
