@@ -1,0 +1,25 @@
+name: WorldBox
+version: 1.0
+main: nl.galaxias.worldbox.WorldBox
+
+commands:
+  wbcreate:
+    description: Creates a world
+    permission: worldbox.create
+  wbunload:
+    description: Unloads a world
+    permission: worldbox.unload
+  goto:
+    description: Teleport to a world
+    permission: worldbox.goto
+
+permissions:
+  worldbox.create:
+    description: Allows you to execute /wbcreate
+    default: op
+  worldbox.unload:
+    description: Allows you to execute /wbunload
+    default: op
+  worldbox.goto:
+    description: Allows you to execute /goto
+    default: op
