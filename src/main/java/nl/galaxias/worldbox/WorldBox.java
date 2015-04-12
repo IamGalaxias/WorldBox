@@ -15,6 +15,10 @@ public class WorldBox extends JavaPlugin {
 
     public void onEnable() {
         plugin = this;
+
+        getCommand("wbcreate").setExecutor(new WbCreateCommand());
+        getCommand("wbunload").setExecutor(new WbUnloadCommand());
+        getCommand("goto").setExecutor(new GotoCommand());
     }
 
     public void onDisable() {
